@@ -13,6 +13,7 @@ function getCustomerList(){
             $data = [
                 'status' => 200,
                 'message' => 'Customer List Fetched Successfully',
+                'data' => $res
             ];
             header("HTTP/1.0 200 OK");
             echo json_encode($data);
